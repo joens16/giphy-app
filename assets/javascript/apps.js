@@ -1,11 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function () { 
 
     var topics = ["Superman", "Batman", "Spiderman", "Iron Man", "black panther", "hulk", "wonder woman", "thor", "wolverine", "flash", "capitan america", "deadpool", "supergirl", "joker", "black widow", "cat women", "cyclops"];
 
     function displayHeroInfo() {
         var hero = $(this).attr("data-name");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=x8n3AbY9IckIBiR5znC2purqDTWRctbd&limit=10";
-        // console.log(queryURL);
+        
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -87,8 +87,6 @@ $(document).ready(function () {
     $(document).on("click", ".heroImg", gifStill);
     
     // Calling the renderButtons function to display the intial buttons
-
-
 })
 
 

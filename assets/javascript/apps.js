@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     function displayHeroInfo() {
         var hero = $(this).attr("data-name");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=x8n3AbY9IckIBiR5znC2purqDTWRctbd&limit=10";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=x8n3AbY9IckIBiR5znC2purqDTWRctbd&limit=10";
         
         $.ajax({
             url: queryURL,

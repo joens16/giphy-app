@@ -19,6 +19,7 @@ body {
     background-color: black;
     color: white;
     border-radius: 25%;
+    margin: 10px;
 }
 
 #top-container {
